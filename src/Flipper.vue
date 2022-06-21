@@ -1,5 +1,5 @@
 <template>
-  <div class="M-Flipper" :class="[flipType, {'go': isFlipping}]">
+  <div :class="['M-Flipper', flipType, {'go': isFlipping}, customContainerClass]">
     <div :class="['digital', 'front', _textClass(frontTextFromData), customClass]"></div>
     <div :class="['digital', 'back', _textClass(backTextFromData), customClass]"></div>
   </div>
@@ -42,6 +42,10 @@ export default {
     },
     // 自定义class
     customClass: {
+      type: String,
+      default: ""
+    },
+    customContainerClass: {
       type: String,
       default: ""
     }

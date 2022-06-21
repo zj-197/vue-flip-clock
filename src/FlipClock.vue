@@ -2,32 +2,32 @@
   <div class="FlipClock">
     <!--时分秒-->
     <template v-if="['{h}{i}{s}', 'time'].includes(mode)">
-      <Flipper ref="flipperHour1" :custom-class="flipperClass"/>
-      <Flipper ref="flipperHour2" :custom-class="flipperClass"/>
+      <Flipper ref="flipperHour1" :custom-class="flipperClass" :custom-container-class="flipperContainerClass"/>
+      <Flipper ref="flipperHour2" :custom-class="flipperClass" :custom-container-class="flipperContainerClass"/>
       <em>:</em>
-      <Flipper ref="flipperMinute1" :custom-class="flipperClass"/>
-      <Flipper ref="flipperMinute2" :custom-class="flipperClass"/>
+      <Flipper ref="flipperMinute1" :custom-class="flipperClass" :custom-container-class="flipperContainerClass"/>
+      <Flipper ref="flipperMinute2" :custom-class="flipperClass" :custom-container-class="flipperContainerClass"/>
       <em>:</em>
-      <Flipper ref="flipperSecond1" :custom-class="flipperClass"/>
-      <Flipper ref="flipperSecond2" :custom-class="flipperClass"/>
+      <Flipper ref="flipperSecond1" :custom-class="flipperClass" :custom-container-class="flipperContainerClass"/>
+      <Flipper ref="flipperSecond2" :custom-class="flipperClass" :custom-container-class="flipperContainerClass"/>
     </template>
     <!--分秒-->
     <template v-if="mode === '{i}{s}'">
-      <Flipper ref="flipperMinute1" :custom-class="flipperClass"/>
-      <Flipper ref="flipperMinute2" :custom-class="flipperClass"/>
+      <Flipper ref="flipperMinute1" :custom-class="flipperClass" :custom-container-class="flipperContainerClass"/>
+      <Flipper ref="flipperMinute2" :custom-class="flipperClass" :custom-container-class="flipperContainerClass"/>
       <em>:</em>
-      <Flipper ref="flipperSecond1" :custom-class="flipperClass"/>
-      <Flipper ref="flipperSecond2" :custom-class="flipperClass"/>
+      <Flipper ref="flipperSecond1" :custom-class="flipperClass" :custom-container-class="flipperContainerClass"/>
+      <Flipper ref="flipperSecond2" :custom-class="flipperClass" :custom-container-class="flipperContainerClass"/>
     </template>
     <!--分-->
     <template v-if="mode === '{i}'">
-      <Flipper ref="flipperMinute1" :custom-class="flipperClass"/>
-      <Flipper ref="flipperMinute2" :custom-class="flipperClass"/>
+      <Flipper ref="flipperMinute1" :custom-class="flipperClass" :custom-container-class="flipperContainerClass"/>
+      <Flipper ref="flipperMinute2" :custom-class="flipperClass" :custom-container-class="flipperContainerClass"/>
     </template>
     <!--秒-->
     <template v-if="mode === '{s}'">
-      <Flipper ref="flipperSecond1" :custom-class="flipperClass"/>
-      <Flipper ref="flipperSecond2" :custom-class="flipperClass"/>
+      <Flipper ref="flipperSecond1" :custom-class="flipperClass" :custom-container-class="flipperContainerClass"/>
+      <Flipper ref="flipperSecond2" :custom-class="flipperClass" :custom-container-class="flipperContainerClass"/>
     </template>
   </div>
 </template>
@@ -53,6 +53,10 @@ export default {
       default: '30s' // 90i 90分，1h 小时 30s 30秒
     },
     flipperClass: {
+      type: String,
+      default: ""
+    },
+    flipperContainerClass: {
       type: String,
       default: ""
     }
