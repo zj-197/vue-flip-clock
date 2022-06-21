@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [12.x, 14.x, 16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -26,6 +26,14 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm publish
+
+      - name: Install
+            run: npm install # 安装依赖
+
+       - name: Build
+            run: npm run build # 打包
+    - run: |
+        npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+        npm publish
       env:
         NPM_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
