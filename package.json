@@ -1,0 +1,52 @@
+{
+  "name": "flip-clock",
+  "version": "0.1.0",
+  "description": "时钟翻牌倒计时，参考兔子先生",
+  "keywords": [
+    "vue",
+    "clock",
+    "flip-clock",
+    "vue-flip-clock"
+  ],
+  "main": "./dist/index.js",
+  "files": [
+    "src",
+    "test",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zj-197/vue-flip-clock.git"
+  },
+  "author": "zj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zj-197/vue-flip-clock/issues"
+  },
+  "homepage": "https://github.com/zj-197/vue-flip-clock#readme",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.0-beta.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.23.1",
+    "vue": "^2.5.17",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "sass": "^1.37.5"
+  },
+  "browserify": {
+    "transform": [
+      "vueify"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="../dist/css.css" as="style">
+    <title>vue-flip-clock</title>
+</head>
+
+<body>
+<div id="app">
+    <flip-clock/>
+</div>
+<!-- <script src="https://vuejs.org/js/vue.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script src="../dist/index.js"></script>
+<script>
+    Vue.use(window['vue-flip-clock'])
+    var a = new Vue({
+        el: '#app'
+    })
+</script>
+</body>
+
+</html>
