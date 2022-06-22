@@ -1,7 +1,7 @@
 import Vue from 'vue'
-import App from './App.vue'
+import FlipClock from './FlipClock.vue'
 import 'babel-polyfill'
 new Vue({
   el: '#app',
-  render: h => h(App)
+  render: h => h(FlipClock)
 })
