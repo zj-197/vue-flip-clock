@@ -1,4 +1,4 @@
-# vue-flip-clock
+# zj-vue-flip-clock
 时钟翻牌倒计时，参考兔子先生
 
 [ [更新日志](https://github.com/zj-197/vue-flip-clock/master/CHANGELOG.md) ]
@@ -12,11 +12,11 @@
 
 ```bash
 # npm 安装
-npm install vue-flip-clock
+npm install zj-vue-flip-clock
 ```
 ```bash
 # yarn 安装
-yarn add vue-flip-clock
+yarn add zj-vue-flip-clock
 ```
 
 
@@ -26,7 +26,7 @@ module.exports = {
   ...
   build: {
     vendor: [
-      'vue-flip-clock
+      'zj-vue-flip-clock
     ...
     plugins: [
       { src: '~/plugins/vue-flip-clock', ssr: false }
@@ -36,7 +36,7 @@ module.exports = {
 ```
 `Vue2` 组件内引入
 ```js
-import { FlipClock }  from 'vue-flip-clock' 
+import { FlipClock }  from 'zj-vue-flip-clock' 
 components: {
     FlipClock
 }
@@ -44,7 +44,7 @@ components: {
 
 `Vue2` 全局引入
 ```js
-import FlipClock from 'FlipClock'
+import FlipClock from 'zj-vue-flip-clock'
 Vue.use(FlipClock)
 ```
 
@@ -52,7 +52,7 @@ Vue.use(FlipClock)
 `nuxt` 引入方式
 ```js
 if(process.browser) {
-    flipClock = require('vue-flip-clock')
+    flipClock = require('zj-vue-flip-clock')
   Vue.use(flipClock.default)
 }
 ```
