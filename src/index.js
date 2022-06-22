@@ -12,7 +12,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 export { FlipClock }
 
 export default {
-  version: '0.1.6',
+  version: '0.1.7',
   install,
   FlipClock,
   vueFlipClock: FlipClock
