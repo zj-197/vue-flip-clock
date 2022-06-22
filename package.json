@@ -1,12 +1,13 @@
 {
   "name": "zj-vue-flip-clock",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "时钟翻牌倒计时，参考兔子先生",
   "keywords": [
     "vue",
     "clock",
     "flip-clock",
-    "vue-flip-clock"
+    "vue-flip-clock",
+    "zj-vue-flip-clock"
   ],
   "main": "./dist/index.js",
   "files": [

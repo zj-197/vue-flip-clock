@@ -3,7 +3,7 @@ import _Vue, { App } from 'vue';
 import './vue';
 
 export declare function install(Vue: typeof _Vue | App): void;
-declare class FlipClock extends _Vue {
+export declare class FlipClock extends _Vue {
   mode: string
   initValue: string
   flipperClass: string
