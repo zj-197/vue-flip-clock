@@ -12,7 +12,13 @@
   "files": [
     "src",
     "test",
-    "dist"
+    "dist",
+    "package.json",
+    "CHANGELOG.md",
+    "README.md",
+    "webpack.config.js",
+    "LICENSE",
+    ".npmrc"
   ],
   "repository": {
     "type": "git",
