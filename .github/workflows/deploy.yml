@@ -15,7 +15,7 @@ jobs:
     # 设置变量
     strategy:
       matrix:
-        node-version: [ 12.x, 14.x, 16.x ]
+        node-version: [ 14.x ]
     steps:
       # 检查并切换到master分支
       - name: 检查master分支
