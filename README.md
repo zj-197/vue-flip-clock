@@ -12,11 +12,7 @@
 
 ```bash
 # npm 安装
-npm install zj-vue-flip-clock
-```
-```bash
-# yarn 安装
-yarn add zj-vue-flip-clock
+npm install zj-vue-flip-clock -S
 ```
 
 
