@@ -25,7 +25,7 @@ module.exports = {
       'zj-vue-flip-clock
     ...
     plugins: [
-      { src: '~/plugins/vue-flip-clock', ssr: false }
+      { src: '~/plugins/zj-vue-flip-clock', ssr: false }
     ]
   }
 }
@@ -33,6 +33,7 @@ module.exports = {
 `Vue2` 组件内引入
 ```js
 import { FlipClock }  from 'zj-vue-flip-clock' 
+import 'zj-vue-flip-clock/dist/index.css'
 components: {
     FlipClock
 }
@@ -41,12 +42,14 @@ components: {
 `Vue2` 全局引入
 ```js
 import FlipClock from 'zj-vue-flip-clock'
+import 'zj-vue-flip-clock/dist/index.css'
 Vue.use(FlipClock)
 ```
 
 
 `nuxt` 引入方式
 ```js
+import 'zj-vue-flip-clock/dist/index.css'
 if(process.browser) {
     flipClock = require('zj-vue-flip-clock')
   Vue.use(flipClock.default)
@@ -56,10 +59,10 @@ if(process.browser) {
 ### 3. 代码中使用
 
 ```html
-<vue-flip-clock
+<zj-vue-flip-clock
   ref="cropper"
   mode="time"
-></vue-flip-clock>
+></zj-vue-flip-clock>
 ```
 
 
